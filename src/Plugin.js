@@ -16,7 +16,7 @@ class Plugin {
    * @param {{}} options The options of the plugin.
    */
   static init(options) {
-    this.used = true;
+    this.used = false;
     this.options = options;
   }
 
