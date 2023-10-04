@@ -1,4 +1,4 @@
-const { merge } = require('webpack-merge');
+const merge = require('webpack-merge');
 const { getQueryData, isWin, pathToPosix } = require('./Utils');
 const HtmlMethod = require('./methods/HtmlMethod');
 const RenderMethod = require('./methods/RenderMethod');

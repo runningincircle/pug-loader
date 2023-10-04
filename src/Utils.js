@@ -1,5 +1,5 @@
 const path = require('path');
-const { merge } = require('webpack-merge');
+const merge = require('webpack-merge');
 const { green, red, yellow } = require('ansis/colors');
 
 const loaderName = 'pug-loader';

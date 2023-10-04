@@ -222,9 +222,9 @@ const resolvePlugin = {
  */
 const compile = function (content, callback) {
   const loaderContext = this;
-  console.log(loaderContext);
   const loaderOptions = getOptions(loaderContext) || {};
   const webpackOptions = loaderContext._compiler.options || {};
+  console.log(webpackOptions);
   const { rootContext: context, resource, resourcePath: filename, resourceQuery } = loaderContext;
   const isPlugin = plugin.isUsed();
   let basedir = loaderOptions.basedir || context;
