@@ -57,7 +57,7 @@
   },
   "peerDependencies": {
     "pug": ">=3.0.2",
-    "webpack": ">=5.32.0",
+    "webpack": ">=4.41.1",
     "enhanced-resolve": ">=5.7.0",
     "markdown-it": "^13.0.1",
     "prismjs": "^1.29.0"
