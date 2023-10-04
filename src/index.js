@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const pug = require('pug');
+const { getOptions } = require('loader-utils');
 const { plugin, ScriptCollection } = require('./Modules');
 const Dependency = require('./Dependency');
 const Resolver = require('./Resolver');
@@ -221,7 +222,8 @@ const resolvePlugin = {
  */
 const compile = function (content, callback) {
   const loaderContext = this;
-  const loaderOptions = loaderContext.getOptions() || {};
+  console.log(loaderContext);
+  const loaderOptions = getOptions(loaderContext) || {};
   const webpackOptions = loaderContext._compiler.options || {};
   const { rootContext: context, resource, resourcePath: filename, resourceQuery } = loaderContext;
   const isPlugin = plugin.isUsed();
