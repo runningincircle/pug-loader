@@ -31,7 +31,7 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webdiscus/pug-loader.git"
+    "url": "git+https://github.com/runningincircle/pug-loader.git"
   },
   "publishConfig": {
     "access": "public",
